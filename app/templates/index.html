@@ -1,0 +1,174 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="hero container" id="home">
+    <div class="hero-left">
+        <h1>Bhavana Tallapaka</h1>
+        <h3>Data Analyst</h3>
+
+        <p>
+            I build practical software and data solutions — from backend systems
+            to analytics dashboards and automation workflows.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="#contact" class="btn-outline">Contact Me</a>
+        </div>
+    </div>
+
+    <div class="hero-right">
+    <img src="/static/images/profile.jpeg" alt="profile">
+</div>
+</section>
+
+<section id="about" class="about">
+  <div class="container about-grid">
+      <div>
+          <h2>About Me</h2>
+          <p>
+              Entry-level software and data professional with strong foundation
+              in Python, SQL, and analytics. Comfortable across development lifecycle —
+              from understanding problem to building and testing solutions.
+          </p>
+      </div>
+
+      <div class="about-box">
+          <div><span>Languages</span> Python, Java, SQL</div>
+          <div><span>Tools</span> Git, Power BI, Tableau</div>
+          <div><span>Focus</span> Backend & Data</div>
+      </div>
+  </div>
+</section>
+
+<section id="skills" class="container">
+
+<h2>Skills</h2>
+
+<div class="skill-bars">
+
+<div class="skill">
+<div class="skill-title">
+<span>Python</span>
+<span>85%</span>
+</div>
+<div class="bar">
+<div class="fill" data-width="85"></div>
+</div>
+</div>
+
+<div class="skill">
+<div class="skill-title">
+<span>SQL</span>
+<span>80%</span>
+</div>
+<div class="bar">
+<div class="fill" data-width="80"></div>
+</div>
+</div>
+
+<div class="skill">
+<div class="skill-title">
+<span>Java</span>
+<span>70%</span>
+</div>
+<div class="bar">
+<div class="fill" data-width="70"></div>
+</div>
+</div>
+
+<div class="skill">
+<div class="skill-title">
+<span>Power BI</span>
+<span>65%</span>
+</div>
+<div class="bar">
+<div class="fill" data-width="65"></div>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section id="projects" class="container">
+
+<h2>Projects</h2>
+
+<div class="projects-grid">
+
+<!-- Project 1 -->
+<div class="project-card">
+    <img src="/static/projects/fraud.jpeg" alt="Fraud Detection">
+
+    <div class="project-content">
+        <h3>Credit Card Fraud Detection</h3>
+
+        <p>
+        Machine learning model detecting fraudulent transactions using classification algorithms and imbalance handling.
+        </p>
+
+        <div class="project-buttons">
+            <a href="https://github.com/BhavanaTallapaka/Fraud-Detection-In-Internet-Banking-using-ML"
+               target="_blank"
+               class="btn-small">
+               GitHub
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Project 2 -->
+<div class="project-card">
+    <img src="/static/projects/imdb.jpg" alt="IMDB Analysis">
+
+    <div class="project-content">
+        <h3>IMDB Data Analysis</h3>
+
+        <p>
+        Exploratory data analysis using Python and Pandas to uncover movie rating patterns and genre trends.
+        </p>
+
+        <div class="project-buttons">
+            <a href="https://github.com/BhavanaTallapaka/IMDB-dataset-analysis"
+               target="_blank"
+               class="btn-small">
+               GitHub
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Project 3 -->
+<div class="project-card">
+    <img src="/static/projects/block.jpeg" alt="Smart City">
+
+    <div class="project-content">
+        <h3>Smart City Blockchain Framework</h3>
+
+        <p>
+        Secure IoT architecture using blockchain for privacy protection and decentralized data access.
+        </p>
+
+        <div class="project-buttons">
+            <a href="https://github.com/BhavanaTallapaka/BLOCKCHAIN-POWERED-SMART-CITY-FRAMEWORK-WITH-ENHANCED-PRIVACY-AND-SECURITY"
+               target="_blank"
+               class="btn-small">
+               GitHub
+            </a>
+        </div>
+    </div>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:bhavitallapaka2003@gmail.com">bhavitallapaka2003@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/BhavanaTallapaka" target="_blank">github.com/BhavanaTallapaka</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/bhavana-tallapaka" target="_blank">linkedin.com/in/bhavana-tallapaka</a></p>
+</section>
+{% endblock %}

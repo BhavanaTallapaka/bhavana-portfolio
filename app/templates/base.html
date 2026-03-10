@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhavana Portfolio</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<script src="/static/scroll.js"></script>
+<body>
+
+    <nav>
+<div class="container nav-inner">
+<h2>Bhavana</h2>
+
+<div class="nav-links">
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+<button id="theme-toggle" class="theme-btn">🌙</button>
+</div>
+</nav>
+
+    {% block content %}{% endblock %}
+
+<script src="/static/js/script.js"></script>
+<script src="/static/js/skills.js"></script>
+<script src="/static/scroll.js"></script>
+</body>
+</html>
