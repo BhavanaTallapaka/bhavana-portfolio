@@ -371,3 +371,10 @@ body.light{
 --muted:#6b7280;
 --accent:#2563eb;
 }
+
+.hero-buttons{
+display:flex;
+gap:14px;
+flex-wrap:wrap;
+margin-top:20px;
+}
