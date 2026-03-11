@@ -505,9 +505,15 @@ gap:20px;
 }
 
 .hero-social a{
-font-size:24px;
-color:var(--accent);
-transition:.2s;
+width:42px;
+height:42px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+background:#111827;
+border:1px solid #1f2937;
+font-size:20px;
 }
 
 .hero-social a:hover{
