@@ -125,6 +125,17 @@ margin-bottom:28px;
 max-width:520px;
 }
 
+/* HERO BUTTONS FIX */
+
+.hero-buttons{
+display:flex;
+gap:18px;
+margin-top:30px;
+flex-wrap:wrap;
+}
+
+/* HERO IMAGE */
+
 .hero img{
 width:340px;
 border-radius:24px;
@@ -136,7 +147,7 @@ transition:transform .5s ease;
 transform:scale(1.04);
 }
 
-/* HERO GLOW EFFECT */
+/* HERO GLOW */
 
 .hero::before{
 content:"";
@@ -160,7 +171,6 @@ padding:13px 24px;
 border-radius:10px;
 text-decoration:none;
 font-weight:600;
-margin-right:12px;
 }
 
 .btn-outline{
@@ -289,7 +299,7 @@ transform:translateY(-8px);
 box-shadow:0 25px 60px rgba(0,0,0,.6);
 }
 
-/* PROJECT CARD HOVER GLOW */
+/* PROJECT CARD GLOW */
 
 .project-card::after{
 content:"";
@@ -329,16 +339,6 @@ opacity:1;
 transform:none;
 }
 
-/* SECTION BACKGROUNDS */
-
-section:nth-child(even){
-background:var(--bg);
-}
-
-section:nth-child(odd){
-background:var(--bg);
-}
-
 /* MOBILE */
 
 @media(max-width:900px){
@@ -372,6 +372,8 @@ body.light{
 --muted:#6b7280;
 --accent:#2563eb;
 }
+
+/* RESUME BUTTON HIGHLIGHT */
 
 .hero-buttons a:last-child{
 border:1px solid #60a5fa;
