@@ -497,3 +497,20 @@ transition:transform .3s ease, box-shadow .3s ease;
 transform:translateY(-10px);
 box-shadow:0 30px 70px rgba(0,0,0,.6);
 }
+
+.hero-social{
+margin-top:25px;
+display:flex;
+gap:20px;
+}
+
+.hero-social a{
+font-size:24px;
+color:var(--accent);
+transition:.2s;
+}
+
+.hero-social a:hover{
+transform:translateY(-3px);
+color:white;
+}
