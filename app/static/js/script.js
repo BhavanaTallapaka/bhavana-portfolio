@@ -24,4 +24,4 @@ function typeEffect(){
     }
 }
 
-window.onload = typeEffect;
+document.addEventListener("DOMContentLoaded", typeEffect);
