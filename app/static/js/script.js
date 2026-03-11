@@ -31,12 +31,14 @@ const element = document.getElementById("typing-role");
 if(!element) return;
 
 if(!isDeleting){
+
 currentText = roles[roleIndex].substring(0,charIndex+1);
 charIndex++;
 
 if(charIndex === roles[roleIndex].length){
 isDeleting = true;
 setTimeout(typeEffect,1200);
+element.innerHTML = currentText;
 return;
 }
 
@@ -55,6 +57,7 @@ roleIndex = (roleIndex+1) % roles.length;
 element.innerHTML = currentText;
 
 setTimeout(typeEffect,isDeleting ? 40 : 80);
+
 }
 
 document.addEventListener("DOMContentLoaded",typeEffect);
