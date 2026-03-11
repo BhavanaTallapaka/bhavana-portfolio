@@ -499,10 +499,16 @@ border:1px solid #1f2937;
 color:var(--accent);
 font-size:20px;
 transition:.25s;
+text-decoration:none;
+outline:none;
 }
 
 .hero-social a:hover{
 transform:translateY(-4px);
 background:var(--accent);
 color:black;
+}
+
+.hero-social a:focus{
+outline:none;
 }
