@@ -12,16 +12,49 @@ btn.textContent="☀️";
 
 });
 
-const text = "I build practical software and data solutions — from backend systems to analytics dashboards and automation workflows.";
+const roles = [
+"Data Analytics Solutions",
+"Machine Learning Models",
+"Backend Systems",
+"Automation Workflows"
+];
 
-let index = 0;
+let roleIndex = 0;
+let charIndex = 0;
+let currentText = "";
+let isDeleting = false;
 
 function typeEffect(){
-    if(index < text.length){
-        document.getElementById("typing-text").innerHTML += text.charAt(index);
-        index++;
-        setTimeout(typeEffect, 25);
-    }
+
+const element = document.getElementById("typing-role");
+
+if(!element) return;
+
+if(!isDeleting){
+currentText = roles[roleIndex].substring(0,charIndex+1);
+charIndex++;
+
+if(charIndex === roles[roleIndex].length){
+isDeleting = true;
+setTimeout(typeEffect,1200);
+return;
 }
 
-document.addEventListener("DOMContentLoaded", typeEffect);
+}else{
+
+currentText = roles[roleIndex].substring(0,charIndex-1);
+charIndex--;
+
+if(charIndex === 0){
+isDeleting = false;
+roleIndex = (roleIndex+1) % roles.length;
+}
+
+}
+
+element.innerHTML = currentText;
+
+setTimeout(typeEffect,isDeleting ? 40 : 80);
+}
+
+document.addEventListener("DOMContentLoaded",typeEffect);

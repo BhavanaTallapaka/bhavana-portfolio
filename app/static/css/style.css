@@ -463,3 +463,37 @@ animation:blink 1s infinite;
 50%{opacity:0}
 100%{opacity:1}
 }
+
+.hero-social{
+margin-top:20px;
+display:flex;
+gap:20px;
+}
+
+.hero-social a{
+color:var(--accent);
+text-decoration:none;
+font-weight:500;
+border-bottom:1px solid transparent;
+}
+
+.hero-social a:hover{
+border-bottom:1px solid var(--accent);
+}
+
+.footer{
+margin-top:80px;
+padding:40px 0;
+text-align:center;
+border-top:1px solid #1f2937;
+color:var(--muted);
+}
+
+.project-card{
+transition:transform .3s ease, box-shadow .3s ease;
+}
+
+.project-card:hover{
+transform:translateY(-10px);
+box-shadow:0 30px 70px rgba(0,0,0,.6);
+}
