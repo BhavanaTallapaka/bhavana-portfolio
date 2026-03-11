@@ -512,3 +512,7 @@ color:black;
 .hero-social a:focus{
 outline:none;
 }
+
+.hero-social a{
+font-size:22px;
+}
