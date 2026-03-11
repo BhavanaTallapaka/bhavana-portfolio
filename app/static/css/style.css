@@ -403,10 +403,17 @@ margin:10px 0 15px 0;
 }
 
 .tech-tags span{
-background:#1f2937;
+background:#0f172a;
 color:#60a5fa;
 font-size:12px;
-padding:4px 10px;
+padding:6px 12px;
 border-radius:20px;
-border:1px solid rgba(96,165,250,.3);
+border:1px solid #334155;
+font-weight:500;
+}
+
+.tech-tags span:hover{
+background:#1e293b;
+transform:translateY(-2px);
+transition:.2s;
 }
