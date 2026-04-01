@@ -4,7 +4,6 @@ from fastapi.staticfiles import StaticFiles
 
 app = FastAPI()
 
-# ✅ CORRECT (string only)
 templates = Jinja2Templates(directory="app/templates")
 
 # static files
