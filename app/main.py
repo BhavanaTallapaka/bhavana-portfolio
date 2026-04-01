@@ -4,16 +4,18 @@ from fastapi.staticfiles import StaticFiles
 
 app = FastAPI()
 
-# THIS LINE IS THE FIX
-app.mount("/static", StaticFiles(directory="app/static"), name="static")
-
+# ✅ CORRECT (string only)
 templates = Jinja2Templates(directory="app/templates")
+
+# static files
+app.mount("/static", StaticFiles(directory="app/static"), name="static")
 
 
 @app.get("/")
 async def home(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
 
+
 @app.get("/projects")
 async def projects(request: Request):
-    return templates.TemplateResponse("project.html", {"request": request})
+    return templates.TemplateResponse("projects.html", {"request": request})
