@@ -16,4 +16,4 @@ async def home(request: Request):
 
 @app.get("/projects")
 async def projects(request: Request):
-    return templates.TemplateResponse("projects.html", {"request": request})
+    return templates.TemplateResponse("project.html", {"request": request})
