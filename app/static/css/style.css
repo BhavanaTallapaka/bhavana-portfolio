@@ -47,52 +47,6 @@ section{
 padding:110px 20px;
 }
 
-/* NAVBAR */
-
-nav{
-position:sticky;
-top:0;
-width:100%;
-background:var(--bg);
-border-bottom:1px solid #1f2933;
-z-index:1000;
-}
-
-/* NAVBAR CLEAN */
-.nav-inner{
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:14px 0;
-}
-
-.nav-links{
-display:flex;
-gap:18px;
-}
-
-.nav-links a{
-font-size:14px;
-color:var(--muted);
-text-decoration:none;
-}
-
-/* FIX ALIGNMENT */
-.nav-left{
-font-weight:600;
-font-size:20px;
-margin-bottom:4px;
-}
-
-.nav-right{
-display:flex;
-align-items:center;
-gap:12px;
-}
-
-.nav-links a:hover{
-color:var(--accent);
-}
 
 /* THEME BUTTON */
 
@@ -575,4 +529,116 @@ width:100%;
 text-align:center;
 }
 
+}
+
+/* PREMIUM GLASS NAVBAR */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+z-index:1000;
+backdrop-filter:blur(12px);
+background:rgba(15, 23, 42, 0.6);
+border-bottom:1px solid rgba(255,255,255,0.05);
+transition:.3s;
+}
+
+/* SCROLL EFFECT */
+nav.scrolled{
+background:rgba(15,23,42,0.9);
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+.nav-inner{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:14px 0;
+}
+
+/* LOGO */
+.nav-left{
+font-size:20px;
+font-weight:600;
+color:var(--text);
+}
+
+/* LINKS */
+.nav-links{
+display:flex;
+gap:22px;
+}
+
+.nav-links a{
+color:var(--muted);
+text-decoration:none;
+font-size:14px;
+position:relative;
+transition:.3s;
+}
+
+/* underline animation */
+.nav-links a::after{
+content:"";
+position:absolute;
+bottom:-4px;
+left:0;
+width:0;
+height:2px;
+background:var(--accent);
+transition:.3s;
+}
+
+.nav-links a:hover::after{
+width:100%;
+}
+
+.nav-links a:hover{
+color:var(--text);
+}
+
+/* RIGHT SIDE */
+.nav-right{
+display:flex;
+align-items:center;
+}
+
+/* THEME BUTTON PREMIUM */
+.theme-btn{
+background:rgba(255,255,255,0.05);
+border:1px solid rgba(255,255,255,0.1);
+color:var(--text);
+padding:8px 12px;
+border-radius:10px;
+cursor:pointer;
+backdrop-filter:blur(8px);
+transition:.3s;
+}
+
+.theme-btn:hover{
+background:var(--accent);
+color:white;
+}
+
+body{
+padding-top:70px;
+}
+
+.hero{
+position:relative;
+overflow:hidden;
+}
+
+.hero::before{
+content:"";
+position:absolute;
+width:600px;
+height:600px;
+background:radial-gradient(circle, #3b82f6 0%, transparent 70%);
+top:-100px;
+left:-100px;
+opacity:.25;
+filter:blur(120px);
+z-index:-1;
 }
