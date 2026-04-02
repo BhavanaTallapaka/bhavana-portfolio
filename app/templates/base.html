@@ -15,18 +15,22 @@
 <body>
 
 <nav>
-<div class="container nav-inner">
-    <h2>Bhavana</h2>
+  <div class="container nav-inner">
+
+    <div class="nav-left">Bhavana</div>
 
     <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </div>
 
-    <button id="theme-toggle" class="theme-btn">🌙</button>
-</div>
+    <div class="nav-right">
+      <button class="theme-btn">🌙</button>
+    </div>
+
+  </div>
 </nav>
 
 {% block content %}{% endblock %}
