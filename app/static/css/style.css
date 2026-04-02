@@ -139,14 +139,6 @@ margin-bottom:28px;
 max-width:520px;
 }
 
-/* HERO BUTTONS FIX */
-
-.hero-buttons{
-display:flex;
-gap:18px;
-margin-top:30px;
-flex-wrap:wrap;
-}
 
 /* HERO IMAGE */
 
@@ -195,12 +187,6 @@ transform:translateY(-2px);
 box-shadow:0 10px 25px rgba(96,165,250,.4);
 }
 
-.hero-buttons{
-display:flex;
-gap:16px;
-flex-wrap:wrap;
-margin-top:20px;
-}
 
 .btn-outline{
 border:1px solid var(--accent);
@@ -571,6 +557,22 @@ margin-top:5px;
 position:absolute;
 top:10px;
 right:10px;
+}
+
+}
+
+@media(max-width:768px){
+
+.hero-buttons{
+display:flex;
+flex-direction:column;
+gap:14px;
+width:100%;
+}
+
+.hero-buttons a{
+width:100%;
+text-align:center;
 }
 
 }
