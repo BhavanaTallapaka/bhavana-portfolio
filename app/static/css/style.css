@@ -550,27 +550,39 @@ margin-top:25px;
 flex-direction:column;
 align-items:center;
 position:relative;
+padding:10px 0;
 }
 
-/* logo */
+/* LOGO */
 .nav-left{
-align-self:flex-start;
 width:100%;
+text-align:left;
+font-size:20px;
+margin-bottom:6px;
 }
 
-/* links centered */
+/* LINKS */
 .nav-links{
 display:flex;
 justify-content:center;
 width:100%;
-margin-top:5px;
+gap:16px;
+margin-bottom:4px;
 }
 
-/* FIX TOGGLE POSITION */
+/* TOGGLE */
 .nav-right{
 position:absolute;
-top:10px;
-right:10px;
+top:12px;
+right:16px;
 }
 
+}
+
+.hero{
+padding-top:20px;
+}
+
+nav .container{
+padding:0 16px;
 }
