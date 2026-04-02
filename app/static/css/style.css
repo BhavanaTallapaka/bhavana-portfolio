@@ -576,3 +576,35 @@ text-align:center;
 }
 
 }
+
+/* HERO BACKGROUND IMAGE */
+.hero{
+position:relative;
+overflow:hidden;
+}
+
+/* background layer */
+.hero::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:url('/static/images/bg.jpg') center/cover no-repeat;
+filter:blur(8px);
+transform:scale(1.1); /* avoid blur edges */
+z-index:-2;
+}
+
+/* dark overlay for readability */
+.hero::after{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.6);
+z-index:-1;
+}
