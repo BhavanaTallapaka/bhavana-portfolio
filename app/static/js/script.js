@@ -1,15 +1,13 @@
-const btn=document.getElementById("theme-toggle");
+const btn = document.querySelector(".theme-btn");
 
-btn.addEventListener("click",()=>{
-
+btn.addEventListener("click", () => {
 document.body.classList.toggle("light");
 
 if(document.body.classList.contains("light")){
-btn.textContent="🌙";
+btn.textContent = "🌙";
 }else{
-btn.textContent="☀️";
+btn.textContent = "☀️";
 }
-
 });
 
 const roles = [
