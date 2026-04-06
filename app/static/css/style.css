@@ -576,29 +576,3 @@ text-align:center;
 }
 
 }
-
-.contact-form{
-max-width:500px;
-margin:30px auto;
-display:flex;
-flex-direction:column;
-gap:15px;
-}
-
-.contact-form input,
-.contact-form textarea{
-padding:12px;
-border-radius:8px;
-border:1px solid #1f2937;
-background:var(--card);
-color:var(--text);
-}
-
-.contact-form textarea{
-min-height:120px;
-resize:none;
-}
-
-.contact-form button{
-margin-top:10px;
-}
