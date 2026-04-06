@@ -182,10 +182,21 @@
 
 <!-- CONTACT -->
 <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:bhavitallapaka2003@gmail.com">bhavitallapaka2003@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/BhavanaTallapaka" target="_blank">github.com/BhavanaTallapaka</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/bhavana-tallapaka" target="_blank">linkedin.com/in/bhavana-tallapaka</a></p>
+
+<h2>Contact Me</h2>
+
+<form method="POST" action="/send-email" class="contact-form">
+
+<input type="text" name="name" placeholder="Your Name" required>
+
+<input type="email" name="email" placeholder="Your Email" required>
+
+<textarea name="message" placeholder="Your Message" required></textarea>
+
+<button type="submit" class="btn">Send Message</button>
+
+</form>
+
 </section>
 
 <footer class="footer">
