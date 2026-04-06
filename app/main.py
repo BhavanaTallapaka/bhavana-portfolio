@@ -22,16 +22,17 @@ async def home(request: Request):
 
 app = FastAPI()
 
+import os
+
 conf = ConnectionConfig(
-    MAIL_USERNAME="bhavanatallapaka2003@gmail.com",
-    MAIL_PASSWORD="kbqi cuuk daqx jydd",
-    MAIL_FROM="bhavanatallapaka2003@gmail.com",
+    MAIL_USERNAME=os.getenv("Bhavana Tallapaka"),
+    MAIL_PASSWORD=os.getenv("kbqi cuuk daqx jydd"),
+    MAIL_FROM=os.getenv("Bhavana Tallapaka"),
     MAIL_PORT=587,
     MAIL_SERVER="smtp.gmail.com",
     MAIL_STARTTLS=True,
     MAIL_SSL_TLS=False
 )
-
 @app.post("/send-email")
 async def send_email(name: str = Form(...), email: str = Form(...), message: str = Form(...)):
     
